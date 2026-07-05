@@ -272,7 +272,9 @@ Percentage of the requests served within a certain time (ms)
 ```
 ## 1. Анализ результатов нагрузочного теста
 ### Результаты GET /items (100 запросов, 10 параллельных)
+```bash
 ab -n 100 -c 10 http://localhost:8080/items
+```
 Ключевые показатели:
     Ошибки: Failed requests: 0 – все запросы технически успешны (HTTP 200).
     Среднее время ответа (mean): 276 мс.
